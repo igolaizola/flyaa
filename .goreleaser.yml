@@ -1,0 +1,14 @@
+builds:
+  - id: flyaa
+    binary: flyaa
+    main: ./cmd/flyaa
+    goarch:
+      - amd64
+      - arm64
+      - arm
+archives:
+  - id: flyaa
+    builds:
+      - flyaa
+    format: zip
+    name_template: 'flyaa_{{ .Version }}_{{- if eq .Os "darwin" }}macos{{- else }}{{ .Os }}{{ end }}_{{ .Arch }}'

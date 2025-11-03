@@ -1,0 +1,19 @@
+# Exclude everything by default
+**
+
+# Allow only what the build needs
+!Makefile
+!go.mod
+!go.sum
+!cmd/**
+!pkg/**
+!*.go
+
+# Always keep these out, even if whitelisted above
+.env
+**/*.key
+**/*.pem
+.history
+.vscode
+.github
+node_modules
