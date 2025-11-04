@@ -5,6 +5,10 @@ The tool calls the AA mobile API, with optional proxy support and configurable s
 
 ## Installation Options
 
+### Download prebuilt binaries
+
+Prebuilt binaries for Linux, macOS, and Windows are available on the [releases page](https://github.com/igolaizola/flyaa/releases).
+
 ### Go install
 
 ```
